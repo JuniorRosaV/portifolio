@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-width: 100%;
+    height: auto;
+    background: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+header {
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+header .espaçamento {
+    overflow: hidden;
+}
+
+.losango {
+    width: 1000px;
+    height: 1000px;
+    background-color: transparent;
+    position: absolute;
+    /* border: 2px solid #ff5816; */
+    margin-top: 80px;
+    top: -30%;
+    left: -50%;
+    transform: translate(-0%, -95%) rotate(45deg);
+    z-index: 1;
+    box-shadow: 1px 0px 10px #ff5816;
+}
+
+/* */
+.losango2 {
+    width: 800px;
+    height: 800px;
+    background-color: transparent;
+    position: absolute;
+    /* border: 2px solid #ff5816; */
+    margin-top: 80px;
+    top: 10%;
+    left: 20%;
+    transform: translate(10%, 95%) rotate(45deg);
+    z-index: -1;
+    overflow: hidden;
+    box-shadow: 1px 0px 60px #ff5816;
+}
+
+.losango3 {
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 80px;
+    top: 155%;
+    left: 0%;
+    transform: translate(-50%, -95%) rotate(48deg);
+    z-index: -1;
+    box-shadow: 1px 0px 60px #ff5816;
+}
+
+header nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background: #202020;
+    /* border: 1px solid #fff; */
+}
+
+nav h1,
+ul {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+nav h1 {
+    justify-content: flex-start;
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 1px 1px 12px #ff5816;
+}
+
+nav h1 span {
+    font-weight: 200;
+    padding: 3px;
+    text-transform: uppercase;
+    color: #ff5816;
+    text-shadow: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-right: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding-left: -10px;
+}
+
+ul li a {
+    text-shadow: 2px 4px 8px #ff5816;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+ul li a:hover {
+    color: #ff5816;
+    font-size: 17px;
+}
+
+header section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    padding: 20px;
+}
+
+header section .left,
+.right {
+    width: 50%;
+    height: auto;
+    padding: 20px;
+}
+
+header section .left {
+    display: block;
+}
+
+header section .left h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 1px 1px 8px #ff5816;
+    margin-top: 0;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header section .left h1 span {
+    color: #ff5816;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 38px;
+    text-shadow: 1px 1px 5px #a34824;
+    display: inline-block;         
+    min-width: 250px;              
+    white-space: nowrap;           
+}
+
+header section .left p {
+    color: #fff;
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+header section .left p span {
+    color: #ff5816;
+    font-weight: 500;
+}
+
+header section .left .redes {
+    justify-content: flex-start;
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+header section .left .redes h6 {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-right: 15px;
+}
+
+header section .left .redes .rede-icons {
+    color: #ff5816;
+    font-size: 30px;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+header section .left .redes .rede-icons i {
+    cursor: pointer;
+}
+
+header section .left .redes .rede-icons i:hover {
+    font-size: 34px;
+    transition: .5s;
+    color: #fff;
+}
+
+header section .left button {
+    width: 60%;
+    max-width: 300px;
+    background: linear-gradient(to left, #ff5816, #202020);
+    padding: 15px 0px;
+    border: 1px solid #acacac;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, font-size 0.3s;
+}
+
+header section .left button:hover {
+    background: linear-gradient(to right, #ff5816, #202020);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+    font-size: 17px;
+}
+
+header section .right {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header section .right img {
+    width: 300px;
+    transform: rotate(-140deg);
+    margin-top: -100px;
+    margin-left: 80px;
+    max-width: 100%;
+    height: auto;
+}
+
+header section .right .losango1 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(#f86328, #202020);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 1;
+    box-shadow: 1px 0px 10px #ff5816;
+}
+
+
+header section .right .losango2 {
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(145deg);
+    z-index: 1;
+}
+
+/* Estilos para a main */
+main {
+    margin-top: 100px;
+    width: 100%;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main .main {
+    width: 80%;
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+main .main section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 6px;
+}
+
+main .main section:last-child {
+    margin-bottom: 0;
+}
+
+main .main h2,
+main .main h3 {
+    color: #ff5816;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+main .main p {
+    line-height: 1.7;
+}
+
+main .main p span {
+    color: #ff5816;
+}
+
+main .main ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+main .main li {
+    margin-bottom: 8px;
+}
+
+main .main .content .app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+
+}
+
+main .main .content .app img {
+    width: 100px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.2s ease-in-out;
+}
+
+main .projetos {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to left,#ff5816,#702001);
+    box-shadow: 3px 3px 20px #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+main .projetos h1{
+    color: #fff;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px #202020;
+}
+
+
+main .projetos .cards {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between; 
+    align-items: center;
+}
+main .projetos .cards .card {
+    margin-top: 20px;
+    width: 250px;
+    height: 350px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #ffffff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+main .projetos .cards .card:hover{
+    width: 250px;
+    height: 355px;
+    background: linear-gradient( #202020,#ff5816);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #ffffff;
+    transition: 5s;
+}
+
+main .projetos .cards .card img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+main .projetos .cards a{
+    text-decoration: none;
+}
+
+main .projetos .cards .card h3{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+main .projetos .cards .card p{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+footer{
+    width: 100%;
+    height: auto; /* Ajustar a altura conforme o conteúdo */
+    background: linear-gradient(to left,#ff5816,#202020);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px -5px 15px rgba(255, 88, 22, 0.5);
+    margin-top: 50px; /* Adiciona um espaço entre a main e o footer */
+}
+
+footer .container {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+footer .footer-col {
+    width: calc(50% - 20px); /* Para duas colunas em telas menores */
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    footer .footer-col {
+        width: calc(25% - 20px); /* Para quatro colunas em telas maiores */
+    }
+}
+
+
+footer .footer-col p {
+    font-size: 11px;
+}
+footer h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #202020;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #fff;
+}
+
+footer .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+footer .copyright {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,.2)
+}
