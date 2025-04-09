@@ -161,6 +161,7 @@ header section .left h1 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    line-height: 1.5;
 }
 
 header section .left h1 span {
@@ -171,7 +172,9 @@ header section .left h1 span {
     text-shadow: 1px 1px 5px #a34824;
     display: inline-block;         
     min-width: 250px;              
-    white-space: nowrap;           
+    white-space: nowrap;  
+    display: block;
+    margin-left: 50px;         
 }
 
 header section .left p {
